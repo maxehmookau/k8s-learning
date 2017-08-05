@@ -26,6 +26,14 @@ Set of rules given to a k8s cluster to tell it run a certain number of pods call
 
 Deployments are controllers of replication sets (see above) and pods. Can deploy different versions and see deployment history (I think.)
 
+### Service
+
+Provides a private IP address for connecting to containers inside pods. Pods may come and go but the service the containers provide should be available.
+
+### Health Check
+
+Define on a pod how to determine if a pod is healthy. You can define a HTTP endpoint to find out if a pod is healthy.
+
 ## Tools
 
 ### kubectl
